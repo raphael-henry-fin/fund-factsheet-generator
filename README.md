@@ -19,6 +19,16 @@ The system works for any fund in the database. Fund ID, benchmark ID, email reci
 
 Sample output — AGG over six months: −2.22% return, 4.45% volatility, −3.72% max drawdown.
 
+## Data sources
+
+Daily closing prices from January to July 2026, cleaned and loaded into Access:
+
+- [SPY — SPDR S&P 500 ETF Trust](https://www.nasdaq.com/market-activity/etf/spy/historical) — Nasdaq
+- [AGG — iShares Core U.S. Aggregate Bond ETF](https://www.nasdaq.com/market-activity/etf/agg/historical) — Nasdaq
+- [S&P 500 Index](https://www.wsj.com/market-data/quotes/index/SPX/historical-prices) — Wall Street Journal
+
+Each file contains 123 daily observations per instrument.
+
 ## Repository structure
 
 - `src/classes/` — `clsTimeSeries`, `ClsFund`, `clsBenchmark`
